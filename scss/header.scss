@@ -1,0 +1,48 @@
+.header {
+    margin: 110px 0 45px 0;
+}
+
+.header__title {
+    text-align: $textAlign;
+    font-size: 18px;
+    text-align: $textAlign;
+    text-transform: uppercase;
+    color: $colorSecondary;
+
+}
+
+.header__head {
+    color: $colorBase;
+    text-align: $textAlign;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+
+}
+
+.header__logo {
+    background-image: url('../img/icon.png');
+    width: 16px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 23px;
+        border: $borderPlayers;
+        width: 210px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top:  50%;
+        left: 23px;
+        border: $borderPlayers;
+        width: 210px;
+    }
+}

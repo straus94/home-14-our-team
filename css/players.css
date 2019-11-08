@@ -1,0 +1,8 @@
+.players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.players__photo {
+  background-image: url("../img/photo.jpg");
+  background-size: cover; }

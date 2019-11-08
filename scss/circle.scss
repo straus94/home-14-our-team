@@ -1,0 +1,18 @@
+.circle {
+    display: flex;
+    justify-content: center;
+}
+
+.circle__item {
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border: $borderPlayers;
+    border-radius: 50%;
+    background-color: $colorBase;
+    margin: 40px 5px;
+}
+
+.circle__item--emphty {
+    background-color: transparent;
+}

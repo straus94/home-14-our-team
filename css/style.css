@@ -1,0 +1,360 @@
+body {
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  color: #545454;
+}
+
+.header {
+  margin: 110px 0 45px 0;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #898f8f;
+}
+
+.header__head {
+  color: #ffcc00;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.header__logo {
+  background-image: url("../img/icon.png");
+  width: 16px;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__logo:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 23px;
+  border: 1px solid #ffcc00;
+  width: 210px;
+}
+
+.header__logo:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  border: 1px solid #ffcc00;
+  width: 210px;
+}
+
+.players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 60px;
+  position: relative;
+}
+
+.players:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid #ffcc00;
+  border-left: 3px solid #ffcc00;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.players:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid #ffcc00;
+  border-left: 3px solid #ffcc00;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  cursor: pointer;
+}
+
+.players__avatar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #ffcc00;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.players__avatar:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #ffcc00;
+  top: -14px;
+  left: -14px;
+  width: 20%;
+  height: 20%;
+}
+
+.players__avatar:before {
+  border-left: 1px solid #ffcc00;
+}
+
+.players__avatar:after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-top: 1px solid #ffcc00;
+  right: -14px;
+  top: -14px;
+}
+
+.players__avatar:after {
+  border-right: 1px solid #ffcc00;
+}
+
+.players__empthy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.players__empthy:before {
+  content: '';
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  border-bottom: 1px solid #ffcc00;
+  bottom: -14px;
+  left: -14px;
+}
+
+.players__empthy:before {
+  border-left: 1px solid #ffcc00;
+}
+
+.players__empthy:after {
+  content: '';
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  border-bottom: 1px solid #ffcc00;
+  right: -14px;
+  bottom: -14px;
+}
+
+.players__empthy:after {
+  border-right: 1px solid #ffcc00;
+}
+
+.players__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.players__line {
+  position: relative;
+}
+
+.players__line:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #ffcc00;
+  height: 100%;
+}
+
+.players__info {
+  width: 37%;
+  padding: 85px;
+}
+
+.players__name {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+}
+
+.players__hr-top {
+  width: 100px;
+  height: 1px;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffcc00;
+}
+
+.players__position {
+  text-align: center;
+  font-size: 24px;
+  color: #666666;
+  margin: 33px 0;
+}
+
+.players__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 0 33px 0;
+}
+
+.players__link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  color: #cccccc;
+  margin: 0 0 0 5px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.players__dec {
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+}
+
+.players__hr-down {
+  width: 50px;
+  height: 4px;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffcc00;
+  margin: 0 auto 26px auto;
+}
+
+.players__view {
+  display: block;
+  padding: 6px 11px;
+  text-transform: uppercase;
+  border: 1px solid #ffcc00;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.players__view:hover {
+  background-color: #ffcc00;
+}
+
+.circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.circle__item {
+  width: 12px;
+  height: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ffcc00;
+  border-radius: 50%;
+  background-color: #ffcc00;
+  margin: 40px 5px;
+}
+
+.circle__item--emphty {
+  background-color: transparent;
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+}
+
+.block:before {
+  content: '';
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid green;
+}
+
+/*# sourceMappingURL=style.css.map */

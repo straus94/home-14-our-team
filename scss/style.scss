@@ -1,0 +1,26 @@
+@import 'vars.scss';
+@import 'reset.scss';
+@import 'header.scss';
+@import 'mixins.scss';
+@import 'players.scss';
+@import 'circle.scss';
+
+.clear {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+
+    &:before {
+        content: '';
+        @include triangle(10px, green, down);
+    }
+}
+
