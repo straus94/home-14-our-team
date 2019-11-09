@@ -1,0 +1,33 @@
+.players__hr-top {
+    width: 100px;
+    height: 1px;
+    border: none;
+    box-sizing: border-box;
+    background-color: $colorBase;
+}
+
+.players__hr-down {
+    width: 50px;
+    height: 4px;
+    border: none;
+    box-sizing: border-box;
+    background-color: $colorBase;
+    margin: 0 auto 26px auto;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 10px;
+        border-left: 5px solid #fff;
+        width: 20px;
+        height: 4px;
+    }
+
+    &:before {
+        top: 0;
+        border-right: 5px solid #fff;
+    }
+}
+

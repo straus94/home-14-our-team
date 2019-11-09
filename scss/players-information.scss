@@ -1,0 +1,73 @@
+.players__info {
+    width: $widthItemBox;
+    padding: $marginContent;
+}
+
+.players__name {
+    text-align: $textAlign;
+    font-size: 36px;
+    font-family: $fontTitle;
+    color: $colorInfoPlayer;
+}
+
+
+
+.players__position {
+    text-align: $textAlign;
+    font-size: 24px;
+    color: $colorInfoPlayer;
+    margin: 33px 0;
+}
+
+.players__social {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    margin: 0 0 33px 0;
+
+}
+
+.players__link {
+    width: $sizeSocialLink;
+    height: $sizeSocialLink;
+    border: 1px solid $colorSocialLink;
+    border-radius: 50%;
+    color: $colorSocialLink;
+    margin: 0 0 0 5px;
+    line-height: 30px;
+    text-align: $textAlign;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $colorBase;
+        border-color: $colorBase;
+    }
+}
+
+.players__dec {
+    color: #333333;
+    font-family: $fontBase;
+    font-size: $fontSizeBase;
+    text-align: $textAlign;
+    line-height: 24px;
+    margin: 0 0 24px 0;
+}
+
+.players__view {
+    display: block;
+    padding: 6px 11px;
+    text-transform: uppercase;
+    border: $borderPlayers;
+    margin: 0 auto;
+    font-family: $fontSecondary;
+    color: $fontSecondary;
+    letter-spacing: 2px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $colorBase;
+    }
+}

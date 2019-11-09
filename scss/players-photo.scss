@@ -1,0 +1,79 @@
+.players__avatar {
+    // background-image: url('../img/photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: $widthItemBox;
+    // box-sizing: border-box;
+    // border: 1px solid red;
+    border: $borderPlayers;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        border-top: $borderPlayers;
+        top: -14px;
+        left: -14px;
+        width: 20%;
+        height: 20%;
+    }
+
+    &:before {
+        border-left: $borderPlayers;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border-top: $borderPlayers;
+        right: -14px;
+        top: -14px;
+    }
+    &:after {
+        border-right: $borderPlayers;
+        
+    }
+}
+
+.players__empthy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        border-bottom: $borderPlayers;
+        bottom: -14px;
+        left: -14px;
+    }
+    &:before {
+        border-left: $borderPlayers;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 20%;
+        width: 20%;
+        border-bottom: $borderPlayers;
+        right: -14px;
+        bottom: -14px;
+    }
+
+    &:after {
+        border-right: $borderPlayers;
+    }
+}
+
+.players__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

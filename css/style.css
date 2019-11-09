@@ -135,6 +135,76 @@ h1, h2 {
   cursor: pointer;
 }
 
+.players__line {
+  position: relative;
+}
+
+.players__line:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #ffcc00;
+  height: 100%;
+}
+
+.circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.circle__item {
+  width: 12px;
+  height: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ffcc00;
+  border-radius: 50%;
+  background-color: #ffcc00;
+  margin: 40px 5px;
+}
+
+.circle__item--emphty {
+  background-color: transparent;
+}
+
+.players__hr-top {
+  width: 100px;
+  height: 1px;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffcc00;
+}
+
+.players__hr-down {
+  width: 50px;
+  height: 4px;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffcc00;
+  margin: 0 auto 26px auto;
+  position: relative;
+}
+
+.players__hr-down:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  border-left: 5px solid #fff;
+  width: 20px;
+  height: 4px;
+}
+
+.players__hr-down:before {
+  top: 0;
+  border-right: 5px solid #fff;
+}
+
 .players__avatar {
   background-size: cover;
   background-repeat: no-repeat;
@@ -212,17 +282,6 @@ h1, h2 {
   height: 100%;
 }
 
-.players__line {
-  position: relative;
-}
-
-.players__line:before {
-  content: '';
-  position: absolute;
-  border-left: 1px solid #ffcc00;
-  height: 100%;
-}
-
 .players__info {
   width: 37%;
   padding: 85px;
@@ -233,15 +292,6 @@ h1, h2 {
   font-size: 36px;
   font-family: "Roboto", sans-serif;
   color: #666666;
-}
-
-.players__hr-top {
-  width: 100px;
-  height: 1px;
-  border: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ffcc00;
 }
 
 .players__position {
@@ -273,6 +323,12 @@ h1, h2 {
   cursor: pointer;
 }
 
+.players__link:hover {
+  color: #fff;
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+
 .players__dec {
   color: #333333;
   font-family: "Raleway", sans-serif;
@@ -280,16 +336,6 @@ h1, h2 {
   text-align: center;
   line-height: 24px;
   margin: 0 0 24px 0;
-}
-
-.players__hr-down {
-  width: 50px;
-  height: 4px;
-  border: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ffcc00;
-  margin: 0 auto 26px auto;
 }
 
 .players__view {
@@ -308,30 +354,6 @@ h1, h2 {
 
 .players__view:hover {
   background-color: #ffcc00;
-}
-
-.circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.circle__item {
-  width: 12px;
-  height: 12px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #ffcc00;
-  border-radius: 50%;
-  background-color: #ffcc00;
-  margin: 40px 5px;
-}
-
-.circle__item--emphty {
-  background-color: transparent;
 }
 
 .clear {
