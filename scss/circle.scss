@@ -11,8 +11,12 @@
     border-radius: 50%;
     background-color: $colorBase;
     margin: 40px 5px;
-}
+    
+    outline: none;
 
-.circle__item--emphty {
-    background-color: transparent;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #FFF;
+    }
 }

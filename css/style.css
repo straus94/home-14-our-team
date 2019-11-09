@@ -164,10 +164,11 @@ h1, h2 {
   border-radius: 50%;
   background-color: #ffcc00;
   margin: 40px 5px;
+  outline: none;
 }
 
-.circle__item--emphty {
-  background-color: transparent;
+.circle__item:hover, .circle__item:focus, .circle__item:active {
+  background-color: #FFF;
 }
 
 .players__hr-top {
