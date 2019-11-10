@@ -1,14 +1,14 @@
 .players__avatar {
-    // background-image: url('../img/photo.jpg');
+    background-image: url('../img/photo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    // width: $widthItemBox;
-    // box-sizing: border-box;
-    // border: 1px solid red;
+    background-position: center;
+    box-sizing: border-box;
     border: $borderPlayers;
     position: relative;
     height: 100%;
-    width: 100%;
+    // min-width: 400px;
+    // width: 100%;
 
     &:before {
         content: '';
@@ -41,7 +41,7 @@
 
 .players__empthy {
     position: relative;
-    width: 100%;
+    // width: 100%;
     height: 100%;
 
     &:before {
@@ -73,7 +73,7 @@
 }
 
 .players__photo {
-    display: block;
-    width: 100%;
-    height: 100%;
+    // display: block;
+    // width: 100%;
+    // height: inherit;
 }

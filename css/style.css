@@ -207,12 +207,15 @@ h1, h2 {
 }
 
 .players__avatar {
+  background-image: url("../img/photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #ffcc00;
   position: relative;
   height: 100%;
-  width: 100%;
 }
 
 .players__avatar:before {
@@ -245,7 +248,6 @@ h1, h2 {
 
 .players__empthy {
   position: relative;
-  width: 100%;
   height: 100%;
 }
 
@@ -275,12 +277,6 @@ h1, h2 {
 
 .players__empthy:after {
   border-right: 1px solid #ffcc00;
-}
-
-.players__photo {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .players__info {
